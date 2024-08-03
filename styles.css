@@ -1,0 +1,121 @@
+body {
+    font-family: 'Gothic', cursive;
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+}
+
+header, main, footer {
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, p {
+    font-family: 'Gothic', cursive;
+}
+
+h1, h2 {
+    color: rgb(255, 192, 203); 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#sobre-mi h2, #sobre-mi p {
+    font-family: 'Gothic', cursive;
+}
+
+#video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-overlay header {
+    margin-bottom: 20px;
+}
+
+#sobre-mi, #proyectos, #recursos {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.instagram-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.text-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.text-container p {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+
+.text-container p:nth-child(1) {
+    color: pink; 
+}
+
+.text-container p:nth-child(2) {
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#proyectos {
+    margin-top: 0;
+}
