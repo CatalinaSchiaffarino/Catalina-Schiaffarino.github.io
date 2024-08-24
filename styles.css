@@ -1,4 +1,3 @@
-/* Ajustes generales */
 body {
     margin: 0;
     padding: 0;
@@ -15,6 +14,10 @@ header, main, footer {
     margin: 20px;
     position: relative;
     z-index: 1;
+}
+
+h1 {
+    text-align: center;
 }
 
 h1, h2, p {
@@ -59,15 +62,15 @@ h1, h2 {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
-    flex-direction: row; /* Organiza elementos en fila */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 .section-content {
-    flex: 1 1 300px; /* Cada sección toma al menos 300px y se ajusta según el tamaño de la pantalla */
+    flex: 1 1 300px; 
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo ligero para cada sección */
+    background-color: rgba(255, 255, 255, 0.1); 
     padding: 15px;
 }
 
@@ -127,15 +130,14 @@ footer p {
     margin-top: 0;
 }
 
-/* Diseño responsive para tablets y móviles */
 @media (max-width: 768px) {
     #sobre-mi, #proyectos, #recursos {
-        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+        flex-direction: column; 
         align-items: center;
     }
 
     .section-content {
-        width: 100%; /* Las secciones ocupan el 100% del ancho en pantallas pequeñas */
+        width: 100%; 
         margin: 5px 0;
     }
 
@@ -193,3 +195,4 @@ footer p {
         height: 20px;
     }
 }
+
