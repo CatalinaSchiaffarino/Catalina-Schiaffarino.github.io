@@ -16,10 +16,6 @@ header, main, footer {
     z-index: 1;
 }
 
-h1 {
-    text-align: center;
-}
-
 h1, h2, p {
     font-family: 'Gothic', cursive;
 }
@@ -152,6 +148,7 @@ footer p {
 
     h1, h2 {
         font-size: 1.5em;
+        text-align: center;
     }
 
     .text-container p {
