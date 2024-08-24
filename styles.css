@@ -1,3 +1,4 @@
+/* Ajustes generales */
 body {
     margin: 0;
     padding: 0;
@@ -27,10 +28,6 @@ h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#sobre-mi h2, #sobre-mi p {
-    font-family: 'Gothic', cursive;
-}
-
 #video-fondo {
     position: fixed;
     top: 0;
@@ -56,15 +53,22 @@ h1, h2 {
     z-index: 1;
 }
 
-.video-overlay header {
-    margin-bottom: 20px;
-}
-
 #sobre-mi, #proyectos, #recursos {
     margin-top: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    display: flex;
+    flex-direction: row; /* Organiza elementos en fila */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+.section-content {
+    flex: 1 1 300px; /* Cada sección toma al menos 300px y se ajusta según el tamaño de la pantalla */
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo ligero para cada sección */
+    padding: 15px;
 }
 
 .instagram-icon {
@@ -125,6 +129,16 @@ footer p {
 
 /* Diseño responsive para tablets y móviles */
 @media (max-width: 768px) {
+    #sobre-mi, #proyectos, #recursos {
+        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+        align-items: center;
+    }
+
+    .section-content {
+        width: 100%; /* Las secciones ocupan el 100% del ancho en pantallas pequeñas */
+        margin: 5px 0;
+    }
+
     body {
         font-size: 16px;
     }
@@ -136,11 +150,6 @@ footer p {
 
     h1, h2 {
         font-size: 1.5em;
-    }
-
-    #sobre-mi, #proyectos, #recursos {
-        padding: 15px;
-        margin: 10px;
     }
 
     .text-container p {
@@ -169,11 +178,6 @@ footer p {
 
     h1, h2 {
         font-size: 1.2em;
-    }
-
-    #sobre-mi, #proyectos, #recursos {
-        padding: 10px;
-        margin: 5px;
     }
 
     .text-container p {
