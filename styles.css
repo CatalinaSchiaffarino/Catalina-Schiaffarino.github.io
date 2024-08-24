@@ -1,4 +1,4 @@
- body {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -6,7 +6,7 @@
     overflow-x: hidden; 
     font-family: 'Gothic', cursive;
     color: white;
-        position: relative;
+    position: relative;
 }
 
 header, main, footer {
@@ -102,7 +102,7 @@ h1, h2 {
     color: pink; 
 }
 
-text-container p:nth-child(2) {
+.text-container p:nth-child(2) {
     color: white;
 }
 
@@ -121,4 +121,71 @@ footer p {
 
 #proyectos {
     margin-top: 0;
+}
+
+/* Diseño responsive para tablets y móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header, main, footer {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    #sobre-mi, #proyectos, #recursos {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .instagram-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, main, footer {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    #sobre-mi, #proyectos, #recursos {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .instagram-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
