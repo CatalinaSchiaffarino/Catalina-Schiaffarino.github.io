@@ -25,6 +25,7 @@ h1, h2 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Centra los títulos */
 }
 
 #video-fondo {
@@ -114,7 +115,7 @@ footer {
     margin: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    text-align: center;
+    text-align: center; /* Centra el texto en el pie de página */
 }
 
 footer p {
@@ -148,7 +149,7 @@ footer p {
 
     h1, h2 {
         font-size: 1.5em;
-        text-align: center;
+        text-align: center; /* Asegura que los títulos se mantengan centrados en pantallas más pequeñas */
     }
 
     .text-container p {
@@ -177,6 +178,7 @@ footer p {
 
     h1, h2 {
         font-size: 1.2em;
+        text-align: center; /* Asegura que los títulos se mantengan centrados en pantallas muy pequeñas */
     }
 
     .text-container p {
@@ -192,4 +194,3 @@ footer p {
         height: 20px;
     }
 }
-
